@@ -65,29 +65,33 @@
                         <legend>About You</legend>
                         <label for="userRole">Please select that which best describes you:</label>
                             <select name="userRole" id="userRole">
-                                <option name="hiringManager" value="hiringManager">Hiring Manager</option>
-                                <option name="recruiter" value="recruiter">Recruiter</option>
                                 <option name="softwareEngineer" value="softwareEngineer">Software Engineer</option>
                                 <option name="student" value="student">Student</option>
                                 <option name="faculty" value="faculty">Faculty</option>
                                 <option name="staff" value="staff">Staff</option>
+                                <option name="hiringManager" value="hiringManager">Hiring Manager</option>
+                                <option name="recruiter" value="recruiter">Recruiter</option>
                                 <option name="other" value="other" default>Other</option>
                                 <option name="none" value="none">None</option>
                             </select>
 
                             <p>What kind of content would you like to see more of?</p>
                             
-                                <label for="photography">photography</label>
-                                <input type="checkbox" name="photography" id="photography" value="yes">
+                                <label for="photography" class="checkbox">photography
+                                    <input type="checkbox" name="photography" id="photography" value="yes">
+                                </label>
 
-                                <label for="blog">blog posts</label>
-                                <input type="checkbox" name="blog" id="blog" value="yes">
+                                <label for="blog" class="checkbox">blog posts
+                                    <input type="checkbox" name="blog" id="blog" value="yes">
+                                </label>
 
-                                <label for="projects">projects</label>
-                                <input type="checkbox" name="projects" id="projects" value="yes">
+                                <label for="projects" class="checkbox">projects
+                                    <input type="checkbox" name="projects" id="projects" value="yes">
+                                </label>
 
-                                <label for="other">other</label>
-                                <input type="checkbox" name="other" id="other" value="yes">
+                                <label for="other" class="checkbox">other
+                                    <input type="checkbox" name="other" id="other" value="yes">
+                                </label>
                     </fieldset>
 
                     <fieldset>
@@ -110,13 +114,18 @@
                         </label>
                     </fieldset>
                     
-                    <label for="submit">
-                        <button type="submit" id="submit" name="submitDetails">Submit</button>
-                    </label>
 
-                    <label for="reset">
-                        <button type="reset" id="reset" name="resetDetails">Reset</button>
-                    </label>
+
+                    <fieldset id="contactButtonSet">
+                        <label for="submit">
+                            <button type="submit" id="submit" name="submitDetails" class="contactButtons">Submit</button>
+                        </label>
+
+                        <label for="reset">
+                            <button type="reset" id="reset" name="resetDetails" class="contactButtons">Reset</button>
+                        </label>
+                    </fieldset>
+
                 </form>
             </article>
         </section>

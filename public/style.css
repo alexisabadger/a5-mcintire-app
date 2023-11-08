@@ -217,26 +217,92 @@ datalist {}
 
 
 /*  ----- Form ----- */
-form {}
-fieldset {}
-  legend {}
+form {
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+fieldset {
+  border: 3px solid var(--accent-color-red)
+}
+  legend {
+    font-weight: 700;
+  }
 label {
   display: block;
 }
-button {}
+button {
+  background-color: var(--accent-color-red);
+  color: var(--main-light-shade);
+
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding: .5rem;
+  border: 4px solid var(--main-dark-shade-off-black);
+  border-radius: 10%;
+  text-decoration: none;
+}
+
+#contactButtonSet{
+  border: none;
+  margin: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contactButtonSet button {
+  margin: 0.5rem;
+}
+
 input {
   margin-bottom: 0.8rem;
+  padding: 0.8rem;
+
+  line-height: 2rem;
+  font-size: 1rem;
 }
-select {}
+
+.checkbox {
+    font-weight: 700;
+    margin-right: 0.8rem;
+    padding-left: 2rem;
+}
+
+select {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+
+  line-height: 2rem;
+  font-size: 1rem;
+}
   optgroup {}
-  option {}
-textarea {}
+  option {
+
+  }
+textarea {
+  margin-bottom: 0.8rem;
+  line-height: 2rem;
+  font-size: 1rem;
+}
 output {}
 meter {}
 progress {}
 
-.contactReply {
-  border: 1px solid red;
+.contactReply,
+.nodeMailMessage {
+  border: 3px solid var(--embellishment-color-blue); /* Example border styling */
+  padding: 1rem; /* Example padding */
+  margin: 1rem 0; /* Example margin to separate messages */
+  background-color: var(--main-light-shade); /* Example background color */
+  color: var(--main-dark-shade-off-black); /* Example text color */
+  font-size: 1rem; /* Example font size */
+  line-height: 1.5; /* Example line height */
+  max-width: 100%; /* Constrain the width to the parent element's width */
+  display: block;
 }
 
 

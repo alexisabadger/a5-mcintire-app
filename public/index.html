@@ -35,18 +35,19 @@
         <a href="./contact.html">Contact</a>
         <a href="./gallery.html">Gallery</a>
     </nav>
-
-    <nav class="local" id="grid-child-local-nav">
-        <a class="anchor" href="#webServers">Web Servers</a>
-        <a class="anchor" href="#frontendDesign">Frontend Design</a>
-        <a class="anchor" href="#optimizingImages">Optimizing Images</a>
-        <a class="anchor" href="#favicons">Favicons</a>
-        <a class="anchor" href="#css">Cascading Stylesheets</a>
-    </nav>
     
     <main id="index">
         <section>
             <h2>Web Dev Concepts</h2>
+            <nav class="local" id="grid-child-local-nav">
+                <a class="anchor" href="#webServers">Servers</a>
+                <a class="anchor" href="#frontendDesign">Design</a>
+                <a class="anchor" href="#optimizingImages">Images</a>
+                <a class="anchor" href="#favicons">Favicons</a>
+                <a class="anchor" href="#css">CSS</a>
+                <a class="anchor" href="#forms">Forms</a>
+                <a class="anchor" href="#express">Express</a>
+            </nav>
 
             <article id="webServers">
                 <h3>Web Servers</h3>
@@ -210,6 +211,83 @@
                             In <strong>regular JavaScript</strong>, which can be accomplished by manipulating the Document Object Model.
                         </li>
                     </ol>
+                </p>
+            </article>
+
+            <article id="forms">
+                <h3>Forms</h3>
+
+                <p>Much of the activity that occurs on the web is 
+                    the result of user input. Web <strong>forms</strong> are a
+                    way for businesses and organizations to collect
+                    data from users (and for users to interact with
+                    websites). Forms are the heart of web development.</p>
+                    
+                <p>Forms are created with the <strong>form tag</strong> 
+                    and contain a variety of input types, including
+                    <strong>textboxes</strong>, <strong>checkboxes</strong>, 
+                    <strong>radio buttons</strong>, and dropdown <strong> option lists.
+                    </strong>. Form fields can be grouped into <strong>fieldsets</strong>
+                    and more details can be provided about a fieldset with the
+                    <strong>legend tag</strong>.
+                </p>
+
+                <p>The most important thing to keep in mind when working
+                    with forms is ease-of-use and <strong>accessibility</strong>. Forms
+                    should be easy to understand, easy to navigate, and
+                    compatible with a variety of devices and browsers.
+                    Accessible forms: 
+                </p>
+                    <ol>
+                        <li>
+                            provide instructions that can be easily read by
+                            both sighted users and users with limited vision.
+                            They also...
+                        </li>
+                        <li>
+                            provide information about why certain information
+                            is being collected.
+                        </li>
+                        <li>
+                            are keyboard accessible, meaning they can be filled out
+                            entirely with a keyboard.
+                        </li>
+                        <li>
+                            have tab indexing so users can easily switch between fields.
+                        </li>
+                        <li>
+                            set the first field to autofocus so the user
+                            can begin typing immediately.
+                        </li>
+                        <li>
+                            are also fully-compatible with screen readers,
+                            including error messages.
+                        </li>
+                    </ol>
+
+                <p>
+                    In the United States, form accessibility is governed by the 
+                    <a href="https://www.section508.gov/develop/software-websites/" target="_blank">Americans 
+                        with Disabilities Act (ADA) - Section 508.</a>
+                </p>
+            </article>
+
+            <article id="express">
+                <h3>Express</h3>
+
+                <p>Node, npm, and Express are the backbone of backend web developement
+                    in JavaScript. The <strong>Node.js</strong> runtime allows developers 
+                    to run JavaScript code on the server. One of the most useful features of
+                    JavaScript, one particularly useful for web development, is its
+                    asynchronous nature (<a href="https://nodejs.org/en/docs/guides/blocking-vs-non-blocking" target="_blank">see 
+                        the Node.js documentation for more information on this topic</a>).
+                    </p>
+                <p>Hand-in-hand with Node.js is <strong>npm</strong>, the Node Package Manager.
+                    It makes installing and managing third-party libraries and dependencies
+                    extremely easy.
+                </p>
+                <p>
+                    A third tool, <strong>Express.js</strong>, is the Node.js web application framework.
                 </p>
             </article>
 
